@@ -35,45 +35,51 @@ for i in range(1000):
 points = 0
 
 
-# initial condition
-playerUsedWords = list()
-computerWord = words[0]
-words.remove(computerWord)
-print(computerWord)
 
 words.sort()
 words = list(set(words))
 
+# Welcoming introduction
+print("Welcome to word game!")
 
-# main game loop
-while(1):
-    if get_user_input(5): break
-    playerWord = playerWord.lower()
+p = input("Are you ready?(y/n): ")
+if p.lower()=='y':
 
-    # checking game ending conditions
-    if not is_word(playerWord):
-        print("# not a valid word!")
-        print("# Game over!")
-        print(f'# points: {points}')
-        break
-    elif playerWord in playerUsedWords:
-        print("# Already used word!")
-        print("# Game over!")
-        print(f'# points: {points}')
-        break
-    elif playerWord[0]!=computerWord[-1]:
-        print("#character doesn't match!")
-        print("# Game over!")
-        print(f'# points: {points}')
-        break
+    # initial condition
+    playerUsedWords = list()
+    computerWord = words[0]
+    words.remove(computerWord)
+    print(computerWord)
 
-    # game continuation
-    else:
-        points+=1
-        playerUsedWords.append(playerWord)
-        for i in words:
-            if playerWord[-1]==i[0]:
-                computerWord = i
-                words.remove(i)
-                print(computerWord)
-                break
+    # main game loop
+    while(1):
+        if get_user_input(5): break
+        playerWord = playerWord.lower()
+    
+        # checking game ending conditions
+        if not is_word(playerWord):
+            print("# not a valid word!")
+            print("# Game over!")
+            print(f'# points: {points}')
+            break
+        elif playerWord in playerUsedWords:
+            print("# Already used word!")
+            print("# Game over!")
+            print(f'# points: {points}')
+            break
+        elif playerWord[0]!=computerWord[-1]:
+            print("#character doesn't match!")
+            print("# Game over!")
+            print(f'# points: {points}')
+            break
+
+        # game continuation
+        else:
+            points+=1
+            playerUsedWords.append(playerWord)
+            for i in words:
+                if playerWord[-1]==i[0]:
+                    computerWord = i
+                    words.remove(i)
+                    print(computerWord)
+                    break
