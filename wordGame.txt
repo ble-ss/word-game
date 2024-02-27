@@ -1,0 +1,24 @@
+> key points
+  > point count
+  > game initializes with given word
+  > game continuation criteria
+    > input is a valid word
+    > input word is not used before
+    > first character of input word matches the last character of given word
+  > game ending criteria
+    > input is not a valid word
+    > input word is used before
+    > first character of input does not match last character of given word
+    > no remaining valid word in predefined list
+  > additional feature
+    > time limit - 5 sec
+    > case insensitivity
+
+
+> algorithmic steps
+  1. predefined wordlist
+  2. two word list to keep track of used words, points counter
+  3. inital case - first generated word displayed
+  4. for each input, checking game ending criteria, adding words to word lists to keep track    
+  5. counting points in each itteration
+  6. in case of game end - printing points
