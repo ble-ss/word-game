@@ -6,7 +6,6 @@ This is a basic word game, where the goal is to type as much words as possible g
 
 Clone the official git repository
 <pre><code id="commandToCopy">git clone https://github.com/ble-ss/word-game.git</code></pre>
-Move into the directory.
+Move into the directory.<Br>
 Simply type the following command on the terminal to initialize the game.
 <pre><code id="commandToCopy">python3 wordgame.py</code></pre>
-
