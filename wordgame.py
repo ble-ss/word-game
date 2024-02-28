@@ -3,6 +3,7 @@ import sys
 import select
 from faker import Faker
 import enchant
+import subprocess
 f = Faker()
 
 #user input within fixed amount of time
@@ -38,6 +39,12 @@ points = 0
 
 words.sort()
 words = list(set(words))
+
+
+cmd = 'figlet Word Game'
+
+result = subprocess.run(cmd, shell=True,capture_output=True, text=True)
+print(result.stdout)
 
 # Welcoming introduction
 print("Welcome to word game!")
