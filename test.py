@@ -16,3 +16,13 @@ def get_user_input(timeout_seconds):
 # Call the function to get user input with a timeout of 5 seconds
 get_user_input(5)
 
+
+#printing header
+
+import subprocess
+
+cmd = "figlet Word Game"
+
+result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+print(result.stdout)
+
