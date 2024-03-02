@@ -1,6 +1,8 @@
 # Basic Word Game
 
-This is a basic word game, where the goal is to type as much words as possible given that the last character of given word matches the first character of the input word. Each word must be submitted within 5 seconds.
+This is basic word game to play when you are feeling bored. The goal is to type as much words as possible while following the rules. The rulse are,
+- The word must be a valid English word
+- The first character of the word must match the last character of the given word- each word must be entered within 5 seconds or the game will end.
 
 ## How to run
 
