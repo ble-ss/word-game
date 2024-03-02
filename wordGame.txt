@@ -1,6 +1,4 @@
 Features to be added
-> adding arrow before each outpt word
 
 Bugs to be fixed
-> error message pops up when program is quit
 > No words with the letter 'x' error
