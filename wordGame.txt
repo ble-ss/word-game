@@ -3,3 +3,4 @@ Features to be added
 
 Bugs to be fixed
 > error message pops up when program is quit
+> No words with the letter 'x' error

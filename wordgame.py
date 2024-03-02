@@ -56,7 +56,7 @@ if p.lower()=='y':
     playerUsedWords = list()
     computerWord = words[0]
     words.remove(computerWord)
-    print(computerWord)
+    print(">", computerWord)
 
     # main game loop
     while(1):
@@ -88,5 +88,5 @@ if p.lower()=='y':
                 if playerWord[-1]==i[0]:
                     computerWord = i
                     words.remove(i)
-                    print(computerWord)
+                    print(">", computerWord)
                     break
