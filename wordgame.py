@@ -41,7 +41,7 @@ words.sort()
 words = list(set(words))
 
 
-cmd = 'figlet Word Game'
+cmd = 'figlet -f slant Word Game'
 
 result = subprocess.run(cmd, shell=True,capture_output=True, text=True)
 print(result.stdout)
